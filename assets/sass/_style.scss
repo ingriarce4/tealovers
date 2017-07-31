@@ -1,12 +1,4 @@
-body{
-  font-family: 'Noto Sans', sans-serif;
-  margin:0;
-  width:100%;
-  height:100vh;
-  background:#ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 header{
 	width:100%; 
 	background:#ff5733; 
@@ -104,41 +96,63 @@ a{
 color:#336699;
 }
 
-#bienvenida {
-  background: url("../dist/imgd/fondo-bienvenida.jpg");
+#header{
+   // background: url("../dist/imgd/fondo-bienvenida.jpg"); intente poner las imagenes desde el css, pero
+  /* no resultó  */
+  background-position: 100% 93%;
   background-size: cover;
-  background-position: center;
-  padding: 50px 0;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
 }
 
 .logo {
   text-align: left;
-  padding: 0 30px;
+  padding: 50px 50px;
+  z-index:1;
+  position: absolute;
 }
 
 .mensaje {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  z-index:2;
+  position: absolute;
+  margin :0 auto;
 }
 
 /* pasion */
 
 #pasion{
-  background: url("../dist/img/fondo-about.jpg");
+  /* background: url("../dist/imgd/fondo-about.jpg"); */
   background-size: cover;
   background-position: center;
   padding: 50px 0;
 }
-
-.contenido {
+.logo{
+  text-align: left;
+  padding: 50px 50px;
+  z-index:1;
+  position: absolute;
+}
+.letra{
   color: white;
   width: 40%;
   margin: 0 auto;
   padding: 30px 30px 100px 30px;
 }
 
-.contenido h1 {
+.letra h1 {
   font-weight: bolder;
   font-size: 5rem;
   line-height: 5rem;
   text-transform: uppercase;
+}
+
+/* colores */
+#colores{
+  position: relative;
 }
