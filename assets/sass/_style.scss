@@ -9,10 +9,10 @@ body{
 }
 header{
 	width:100%; 
-	background:#ffffff; 
+	background:#ff5733; 
 	height:60px; 
 	line-height:60px;
-	border-bottom:1px solid #dddddd;
+	border-bottom:1px solid #ffffff;
 }
 .hamburger{
   background:none;
@@ -102,4 +102,43 @@ padding-left:20px;
 }
 a{
 color:#336699;
+}
+
+#bienvenida {
+  background: url("../dist/imgd/fondo-bienvenida.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.logo {
+  text-align: left;
+  padding: 0 30px;
+}
+
+.mensaje {
+  text-align: center;
+}
+
+/* pasion */
+
+#pasion{
+  background: url("../dist/img/fondo-about.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.contenido {
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  padding: 30px 30px 100px 30px;
+}
+
+.contenido h1 {
+  font-weight: bolder;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
 }

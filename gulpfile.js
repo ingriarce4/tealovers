@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sass= require('gulp-sass');
 var minifyCSS= require ('gulp-minify-css');
+var imagemin = require('gulp-imagemin');
 var webserver = require('gulp-webserver');
 var cssmin = require('gulp-minify-css');
 
@@ -22,6 +23,12 @@ gulp.task('style', function(){
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('dist/css/'));
 });
+
+gulp.task('optimizar', () =>
+    gulp.src('img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/imgd'))
+);
 
 gulp.task('webserver', function(){
 	gulp.src('../tea-lovers/')

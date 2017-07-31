@@ -1,6 +1,4 @@
 
-
-
 $( document ).ready(function() {
 
 	$( ".cross" ).hide();
@@ -18,14 +16,5 @@ $( document ).ready(function() {
 			$( ".hamburger" ).show();
 		});
 	});
-
 });
 
-$( document ).ready(function() {
-    alert( video.toSource() ); //For testing
-    video.id = 'video';
-    video.source.src = 'https://vimeo.com/148993635';
-    video.type = 'video/mp4';
-    video.control = true;
-video.appendTo($('#video1'));
-});

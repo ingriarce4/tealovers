@@ -12631,8 +12631,6 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 
-
-
 $( document ).ready(function() {
 
 	$( ".cross" ).hide();
@@ -12650,5 +12648,5 @@ $( document ).ready(function() {
 			$( ".hamburger" ).show();
 		});
 	});
-
 });
+
