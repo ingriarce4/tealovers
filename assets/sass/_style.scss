@@ -4,7 +4,6 @@ header{
 	background:#ff5733; 
 	height:60px; 
 	line-height:60px;
-	border-bottom:1px solid #ffffff;
 }
 .hamburger{
   background:none;
@@ -12,14 +11,14 @@ header{
   top:0;
   right:0;
   line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding:60px;
   color:#999;
   border:0;
-  font-size:1.4em;
+  font-size:6em;
   font-weight:bold;
   cursor:pointer;
   outline:none;
-  z-index:10000000000000;
+  z-index:20000000000000;
 }
 .cross{
   background:none;
@@ -29,54 +28,59 @@ header{
   padding:7px 15px 0px 15px;
   color:#999;
   border:0;
-  font-size:3em;
+  font-size:6em;
   line-height:65px;
   font-weight:bold;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
 }
-.menu{z-index:1000000; 
+
+.menu{
+  z-index:1000000; 
   font-weight:bold; 
-  font-size:0.8em; 
-  width:100%; 
-  background:#f1f1f1; 
+  font-size:4.8em;  
+  background:#000000;
+  opacity: 0.2;
   position:absolute; 
   text-align:center; 
+  height: 70vh;
   font-size:12px;
+  width: 100%;
 }
 .menu ul {
+  
   margin: 0; 
-  padding: 0;
+  padding-top: 70px;
   list-style-type: none; 
   list-style-image: none;
 }
-.menu li {
+.menu a {
+font-family: 'Roboto Mono', monospace;
 display: block;   
 padding:15px 0 15px 0; 
-border-bottom:#dddddd 1px solid;
+font-size:30px;
 }
-.menu li:hover{
-display: block;    
-background:#ffffff; 
-padding:15px 0 15px 0; 
-border-bottom:#dddddd 1px solid;
+
+#top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
-.menu ul li a { 
-text-decoration:none;  
-margin: 0px; color:#666;
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
-.menu ul li a:hover {  
-color: #666; 
-text-decoration:none;
-}
-.menu a{
-text-decoration:none; 
-color:#666;
-}
-.menu a:hover{
-text-decoration:none; 
-color:#666;
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .glyphicon-home{
@@ -93,20 +97,21 @@ span{
 padding-left:20px;
 }
 a{
-color:#336699;
+color:#ffffff;
 }
 
+/* header */
 #header{
-   // background: url("../dist/imgd/fondo-bienvenida.jpg"); intente poner las imagenes desde el css, pero
-  /* no resultó  */
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
+background-image: url("../imgd/fondo-bienvenida.jpg"); 
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+position: relative;
+background-repeat: no-repeat;
+background-position: center;
+z-index:0;
 }
-.logo {
+.logo { 
   text-align: left;
   padding: 50px 50px;
   z-index:1;
@@ -123,7 +128,7 @@ color:#336699;
 /* pasion */
 
 #pasion{
-  /* background: url("../dist/imgd/fondo-about.jpg"); */
+  background: url("../imgd/fondo-about.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -138,18 +143,21 @@ color:#336699;
   position: absolute;
 }
 .letra{
-  z-index:2;
-  position: absolute;
-  margin :0% auto;
-  padding-left:180px;
-  top:100px;
+ color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 220px;
 }
-.letra h2 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit
+.letra h1 {
+  font-weight: bolder;
+  font-size: 7rem;
+  line-height: 7rem;
+  text-transform: uppercase;
 }
+.letra p {
+  font-size: 2rem;
+  line-height:2rem;
+  }
 
 /* colores */
 #colores{
@@ -489,8 +497,17 @@ footer p strong {
           font-size: 14px;
     }
 }
-
-/* preguntas */
+/* 
+<!-- preguntas del té --> */
+#te{
+  background: url("../imgd/disfruta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .letra1{
   z-index:2;
   position: absolute;
@@ -506,6 +523,15 @@ footer p strong {
 }
 
 /* <!-- campos --> */
+#campos{
+  background: url("../imgd/parallax-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .letra2{
   z-index:2;
   position: absolute;
@@ -524,3 +550,4 @@ footer p strong {
 #pie{
   background-color: #101010;
 }
+
