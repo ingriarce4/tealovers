@@ -12662,7 +12662,6 @@ $('.gallery-item').hover(function(){
             }, 100);
         });
 
-  	/* AUTHOR LINK */
      $('.about-me-img img, .authorWindowWrapper').hover(function(){
             $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
         }, function(){

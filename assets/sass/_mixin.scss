@@ -1,0 +1,24 @@
+@mixin fotos{
+.logo{
+  text-align: left;
+  padding: 50px 50px;
+  z-index:1;
+  position: absolute;
+}
+.letra{
+ color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 230px 300px;
+}
+.letra h1 {
+  font-weight: bolder;
+  font-size: 7.5rem;
+  line-height: 7.5rem;
+  text-transform: uppercase;
+}
+.letra p {
+  font-size: 1.7rem;
+  line-height:1.7rem;
+  }
+}
